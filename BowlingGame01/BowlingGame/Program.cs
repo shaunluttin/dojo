@@ -9,4 +9,6 @@ namespace BowlingGame
             Console.WriteLine("Hello World!");
         }
     }
+
+    public class Game {}
 }
