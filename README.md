@@ -16,9 +16,13 @@ Read the kata description once in its entirety. Not done. I decided to start on 
 
 Choose a language in which to complete the kata for the first time. Done. C#.
 
-Code each kata section once. 
+> I suggest you proceed by memorizing it in short sections. Fully learn one section before adding the next.
 
-* The First Test.**
+Code each kata section once. Mark it as 'Done and memorized' once I have coded it once without looking at any notes; otherwise, mark it as 'Done'. 
+
+Move on to the next section only once the previous one is 'Done and memorized'.
+
+* The First Test. Done.
 * The Second Test
 * The Third Test
 * The Fourth Test
