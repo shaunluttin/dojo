@@ -12,13 +12,13 @@ Choose a kata. Done. My choice is:
 
 Read the kata introduction once in its entirety. Done.
 
-Read the kata description once in its entirety.**
+Read the kata description once in its entirety. Not done. I decided to start on the first section when I reached it.
 
-Choose a language in which to complete the kata.
+Choose a language in which to complete the kata for the first time. Done. C#.
 
 Code each kata section once. 
 
-* The First Test
+* The First Test.**
 * The Second Test
 * The Third Test
 * The Fourth Test
