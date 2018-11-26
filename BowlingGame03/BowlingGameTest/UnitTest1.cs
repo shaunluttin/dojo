@@ -3,12 +3,12 @@ using Xunit;
 
 namespace BowlingGameTest
 {
-    public class UnitTest1
+    public class BowlingGameTest
     {
         [Fact]
-        public void Test1()
+        public void testGutter()
         {
-
+            var g = new Game();
         }
     }
 }
