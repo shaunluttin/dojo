@@ -1,6 +1,12 @@
 
 # dojo
 
+26 November 2018
+
+In Vim, how do we open the buffer for a file in the argument list by name?
+
+In Vim, how do we rename a file?
+
 23 November 2018
 
 Ultimately, I would like to complete one kata once, using Vim as the editor and using any software language.
