@@ -13,13 +13,17 @@ namespace BowlingGameTest
             _g = new Game(); 
         }
 
+        private void rollMany(int number, int pins)
+        {
+            for (var i = 0; i < number; ++i)
+                _g.roll(pins);
+        }
+
         [Fact]
         public void testGutterGame()
         {
             setup();
-            for (var i = 0; i < 20; ++i)
-                _g.roll(0);
-
+            rollMany(20, 0);
             Assert.Equal(0, _g.score());
         }
 
@@ -27,9 +31,7 @@ namespace BowlingGameTest
         public void testAllOnes()
         {
             setup();
-            for (var i = 0; i < 20; ++i)
-                _g.roll(1);
-
+            rollMany(20, 1);
             Assert.Equal(20, _g.score());
         }
     }
