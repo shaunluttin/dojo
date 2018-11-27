@@ -28,8 +28,8 @@ Code each kata section once. Mark it as 'Done and memorized' once I have coded i
 
 Move on to the next section only once the previous one is 'Done and memorized'.
 
-* The First Test. Done.
-* The Second Test
+* The First Test. Done and memorized.
+* The Second Test. *
 * The Third Test
 * The Fourth Test
 * The Fifth Test
