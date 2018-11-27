@@ -10,7 +10,7 @@ namespace BowlingGame
 
         public int score() 
         {
-            return -1;
+            return 0;
         }
     }
 }
