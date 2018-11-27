@@ -5,5 +5,11 @@ namespace BowlingGameTest
 {
     public class UnitTest1
     {
+        [Fact]
+        public void testGutterGame() 
+        {
+            var g = new Game();
+
+        }
     }
 }
