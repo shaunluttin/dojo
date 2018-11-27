@@ -8,7 +8,7 @@ namespace BowlingGameTest
     {
         private Game _g;
 
-        private void setUp()
+        public BowlingGameTest()
         {
             _g = new Game(); 
         }
@@ -22,7 +22,6 @@ namespace BowlingGameTest
         [Fact]
         public void testGutterGame()
         {
-            setUp();
             rollMany(20, 0);
             Assert.Equal(0, _g.score());
         }
@@ -30,7 +29,6 @@ namespace BowlingGameTest
         [Fact]
         public void testAllOnes()
         {
-            setUp();
             rollMany(20, 1);
             Assert.Equal(20, _g.score());
         }
