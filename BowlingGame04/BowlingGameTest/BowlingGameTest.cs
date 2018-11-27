@@ -6,10 +6,17 @@ namespace BowlingGameTest
 {
     public class UnitTest1
     {
+        private Game g;
+
+        private void setup()
+        {
+            g = new Game();
+        }
+
         [Fact]
         public void testGutterGame() 
         {
-            var g = new Game();
+            setup();
             for(var i = 0; i < 20; ++i)
                 g.roll(0);
 
@@ -20,7 +27,7 @@ namespace BowlingGameTest
         [Fact]
         public void testAllOnes()
         {
-            var g = new Game();
+            setup();
             for(var i = 0; i < 20; ++i)
                 g.roll(1);
 
