@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using BowlingGame;
 
 namespace BowlingGameTest
 {
@@ -9,7 +10,6 @@ namespace BowlingGameTest
         public void testGutterGame() 
         {
             var g = new Game();
-
         }
     }
 }
