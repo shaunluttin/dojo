@@ -11,7 +11,7 @@ namespace BowlingGameTest
         {
             var g = new Game();
             for (var i = 0; i < 20; ++i)
-                g.roll();
+                g.roll(0);
         }
     }
 }
