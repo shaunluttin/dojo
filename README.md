@@ -1,6 +1,10 @@
 
 # dojo
 
+28 November 2018
+
+
+
 27 November 2018
 
 In 27-min I can get through all of The First Test and The Second Test including the refactoring steps.
