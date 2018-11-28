@@ -3,7 +3,7 @@
 
 28 November 2018
 
-
+It would be nice to use Vim's directional keys in command mode.
 
 27 November 2018
 
