@@ -1,6 +1,12 @@
 
 # dojo
 
+27 November 2018
+
+27-min
+
+* [ ] Can we use Powershell with tab completion from Vim?
+
 26 November 2018
 
 In Vim, how do we open the buffer for a file in the argument list by name?
