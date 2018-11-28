@@ -3,9 +3,11 @@
 
 27 November 2018
 
-27-min
+In 27-min I can get through all of The First Test and The Second Test including the refactoring steps.
 
-* [ ] Can we use Powershell with tab completion from Vim?
+It would be nice to use PowerShell with autocomplete for vim's `!some-command` operations.
+
+https://stackoverflow.com/a/3419406/1108891
 
 26 November 2018
 
