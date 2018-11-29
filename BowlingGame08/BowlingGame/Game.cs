@@ -16,23 +16,23 @@ namespace BowlingGame
         public int score()
         {
             var score = 0;
-            var i = 0;
+            var frameIndex = 0;
             for (var frame = 0; frame < 10; ++frame)
             {
                 // isSpare
-                if (_rolls[i] + _rolls[i+1] == 10) {
+                if (_rolls[frameIndex] + _rolls[frameIndex+1] == 10) {
                     // sum the two rolls from this frame
-                    score += _rolls[i] + _rolls[i + 1];
+                    score += _rolls[frameIndex] + _rolls[frameIndex + 1];
                     // add the first roll from the next fame
-                    score += _rolls[i + 2];
+                    score += _rolls[frameIndex + 2];
                 } 
                 else {
                     // sum the two rolls from this frame
-                    score += _rolls[i] + _rolls[i + 1];
+                    score += _rolls[frameIndex] + _rolls[frameIndex + 1];
                 }
 
                 // account for the two rolls from this frame
-                i += 2;
+                frameIndex += 2;
             }
 
             return score;
