@@ -1,6 +1,12 @@
 
 # dojo
 
+29 November 2018
+
+It would be nice to know how Vim's C-p works while in insert mode. It appears to be auto-complete.
+
+It would be nice to know what C-r does while in Vim's file explorer (:Ex).
+
 28 November 2018
 
 It would be nice to use Vim's directional keys in command mode.
@@ -41,7 +47,7 @@ Code each kata section once. Mark it as 'Done and memorized' once I have coded i
 Move on to the next section only once the previous one is 'Done and memorized'.
 
 * The First Test. Done and memorized.
-* The Second Test. Done.
+* The Second Test. Done and memorized.
 * The Third Test
 * The Fourth Test
 * The Fifth Test
