@@ -19,12 +19,10 @@ namespace BowlingGame
             var frameIndex = 0;
             for (var frame = 0; frame < 10; ++frame)
             {
-                // isSpare
-                if (_rolls[frameIndex] + _rolls[frameIndex+1] == 10) {
-                    // sum the two rolls from this frame
-                    score += _rolls[frameIndex] + _rolls[frameIndex + 1];
+                if (isSpare(frameIndex)) {
+                    // take the score from this frame (which is 10)
                     // add the first roll from the next fame
-                    score += _rolls[frameIndex + 2];
+                    score += 10 + _rolls[frameIndex + 2];
                 } 
                 else {
                     // sum the two rolls from this frame
@@ -36,6 +34,13 @@ namespace BowlingGame
             }
 
             return score;
+        }
+
+        private bool isSpare(int frameIndex)
+        {
+            return 
+                _rolls[frameIndex] + 
+                _rolls[frameIndex+1] == 10;
         }
     }
 }
