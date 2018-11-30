@@ -46,6 +46,13 @@ namespace BowlingGameTest
             Assert.Equal(24, g.score());
         }
 
+        [Fact]
+        public void testPerfectGame()
+        {
+            rollMany(12, 10);
+            Assert.Equal(300, g.score());
+        }
+
         private void rollStrike()
         {
             g.roll(10);
