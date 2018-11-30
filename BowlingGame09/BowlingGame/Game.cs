@@ -14,9 +14,24 @@ namespace BowlingGame
 
         public int score() 
         {
+            const int frames = 10;
+
             var score = 0;
-            for(var i = 0; i < _rolls.Length; ++i)
-                score += _rolls[i];
+            var frameIndex = 0;
+            for(var frame = 0; frame < frames; ++frame)
+            {
+                if(_rolls[frameIndex] + _rolls[frameIndex + 1] == 10)
+                {
+                    score += 10; 
+                    score += _rolls[frameIndex + 2];
+                } 
+                else
+                {
+                    score += _rolls[frameIndex] + _rolls[frameIndex + 1];
+                }
+
+                frameIndex += 2;
+            }
 
             return score;
         }
