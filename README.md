@@ -1,6 +1,10 @@
 
 # dojo
 
+30 November 2018
+
+In 45-min ...
+
 29 November 2018
 
 It would be nice to know how Vim's C-p works while in insert mode. It appears to be auto-complete.
