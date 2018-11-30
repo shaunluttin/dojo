@@ -16,7 +16,11 @@ namespace BowlingGame
 
         public int score() 
         {
-            return _score;
+            var score = 0;
+            for(var i = 0; i < _rolls.Length; ++i)
+                score += _rolls[i];
+
+            return score;
         }
     }
 }
