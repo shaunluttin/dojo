@@ -20,10 +20,9 @@ namespace BowlingGame
             var frameIndex = 0;
             for(var frame = 0; frame < frames; ++frame)
             {
-                if(_rolls[frameIndex] + _rolls[frameIndex + 1] == 10)
+                if(isSpare(frameIndex))
                 {
-                    score += 10; 
-                    score += _rolls[frameIndex + 2];
+                    score += 10 + _rolls[frameIndex + 2];
                 } 
                 else
                 {
@@ -34,6 +33,11 @@ namespace BowlingGame
             }
 
             return score;
+        }
+
+        private bool isSpare(int frameIndex)
+        {
+            return _rolls[frameIndex] + _rolls[frameIndex + 1] == 10;
         }
     }
 }
