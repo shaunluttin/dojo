@@ -5,5 +5,8 @@ namespace BowlingGameTest
 {
     public class BowlingGameTest 
     {
+        [Fact]
+        public void testGutterGame()
+        {}
     }
 }
