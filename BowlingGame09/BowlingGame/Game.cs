@@ -6,6 +6,8 @@ namespace BowlingGame
     {
         private int[] _rolls = new int[21];
         private int _currentRoll;
+        private const int _frames = 10;
+        private const int _perfectScore = 10;
 
         public void roll(int pins) 
         {
@@ -14,25 +16,23 @@ namespace BowlingGame
 
         public int score() 
         {
-            const int frames = 10;
-
             var score = 0;
             var frameIndex = 0;
-            for(var frame = 0; frame < frames; ++frame)
+            for(var frame = 0; frame < _frames; ++frame)
             {
-                if(_rolls[frameIndex] == 10) 
+                if(_rolls[frameIndex] == _perfectScore) 
                 {
-                    score += 10 + _rolls[frameIndex + 1] + _rolls[frameIndex + 2];
+                    score += _perfectScore + strikeBonus(frameIndex);
                     frameIndex += 1;
                 }
                 else if(isSpare(frameIndex))
                 {
-                    score += 10 + _rolls[frameIndex + 2];
+                    score += _perfectScore + spareBonus(frameIndex);
                     frameIndex += 2;
                 } 
                 else
                 {
-                    score += _rolls[frameIndex] + _rolls[frameIndex + 1];
+                    score += sumOfBallsInFrame(frameIndex);
                     frameIndex += 2;
                 }
             }
@@ -40,9 +40,24 @@ namespace BowlingGame
             return score;
         }
 
+        private int sumOfBallsInFrame(int frameIndex)
+        {
+            return _rolls[frameIndex] + _rolls[frameIndex + 1];
+        }
+
+        private int spareBonus(int frameIndex)
+        {
+            return _rolls[frameIndex + 2];
+        }
+
+        private int strikeBonus(int frameIndex)
+        {
+            return _rolls[frameIndex + 1] + _rolls[frameIndex + 2];
+        }
+
         private bool isSpare(int frameIndex)
         {
-            return _rolls[frameIndex] + _rolls[frameIndex + 1] == 10;
+            return _rolls[frameIndex] + _rolls[frameIndex + 1] == _perfectScore;
         }
     }
 }
