@@ -20,7 +20,7 @@ namespace BowlingGame
             var frameIndex = 0;
             for(var frame = 0; frame < _frames; ++frame)
             {
-                if(_rolls[frameIndex] == _perfectScore) 
+                if(isStrike(frameIndex)) 
                 {
                     score += _perfectScore + strikeBonus(frameIndex);
                     frameIndex += 1;
@@ -53,6 +53,11 @@ namespace BowlingGame
         private int strikeBonus(int frameIndex)
         {
             return _rolls[frameIndex + 1] + _rolls[frameIndex + 2];
+        }
+
+        private bool isStrike(int frameIndex)
+        {
+            return _rolls[frameIndex] == _perfectScore;
         }
 
         private bool isSpare(int frameIndex)
