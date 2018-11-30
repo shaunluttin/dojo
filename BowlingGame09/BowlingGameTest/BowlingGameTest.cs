@@ -7,6 +7,8 @@ namespace BowlingGameTest
     {
         [Fact]
         public void testGutterGame()
-        {}
+        {
+            var g = new Game();
+        }
     }
 }
