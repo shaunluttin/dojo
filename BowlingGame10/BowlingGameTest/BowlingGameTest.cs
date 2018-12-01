@@ -30,8 +30,7 @@ namespace BowlingGameTest
         [Fact]
         public void testOneSpare()
         {
-            g.roll(5);
-            g.roll(5);
+            rollSpare();
             g.roll(3);
             rollMany(17, 0);
             Assert.Equal(16, g.score());
@@ -41,6 +40,12 @@ namespace BowlingGameTest
         {
             for (var i = 0; i < rolls; ++i)
                 g.roll(pins);
+        }
+
+        private void rollSpare()
+        {
+            g.roll(5);
+            g.roll(5);
         }
     }
 }
