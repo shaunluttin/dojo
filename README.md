@@ -58,9 +58,9 @@ Move on to the next section only once the previous one is 'Done and memorized'.
 
 * The First Test. Done and memorized.
 * The Second Test. Done and memorized.
-* The Third Test
-* The Fourth Test
-* The Fifth Test
+* The Third Test. Done. 
+* The Fourth Test. Done. 
+* The Fifth Test. Done. 
 
 Evaluate: 
 
