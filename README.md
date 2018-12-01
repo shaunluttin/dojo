@@ -3,7 +3,7 @@
 
 01 December 2018 
 
-
+* [ ] Do The Bowling Game Kata in C# with more C# naming conventions. E.g. Roll and Score not roll and score.
 
 30 November 2018
 
