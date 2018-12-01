@@ -5,6 +5,8 @@
 
 * [ ] Do The Bowling Game Kata in C# with more C# naming conventions. E.g. Roll and Score not roll and score.
 
+* [ ] Use a leading underscore _ in private fields.
+
 30 November 2018
 
 In 45-min ...
