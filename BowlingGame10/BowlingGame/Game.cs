@@ -20,23 +20,28 @@ namespace BowlingGame
             const int frames = 10;
 
             var score = 0;
-            var roll = 0;
+            var frameIndex = 0; // the first roll of the frame
             for (var frame = 0; frame < frames; ++frame)
             {
-                if(_rolls[roll] + _rolls[roll + 1] == 10)
+                if(isSpare(frameIndex))
                 {
-                    score += 10 + _rolls[roll + 2];
+                    score += 10 + _rolls[frameIndex + 2];
                 }
                 else 
                 {
-                    score += _rolls[roll] + _rolls[roll + 1];
+                    score += _rolls[frameIndex] + _rolls[frameIndex + 1];
                 }
 
 
-                roll += 2;
+                frameIndex += 2;
             }
 
             return score;
+        }
+
+        private bool isSpare(int frameIndex)
+        {
+            return _rolls[frameIndex] + _rolls[frameIndex + 1] == 10;
         }
     }
 }
