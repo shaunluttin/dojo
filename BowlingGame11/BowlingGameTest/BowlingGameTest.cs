@@ -15,5 +15,15 @@ namespace BowlingGameTest
 
             Assert.Equal(0, g.score());
         }
+
+        [Fact]
+        public void testAllOnes()
+        {
+            var g = new Game();
+            for (var i = 0; i  < 20; i++) // ugly magic number 20
+                g.roll(1);
+
+            Assert.Equal(20, g.score());
+        }
     }
 }
