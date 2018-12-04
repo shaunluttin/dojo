@@ -12,6 +12,8 @@ namespace BowlingGameTest
             var g = new Game();
             for (var i = 0; i  < 20; i++) // ugly magic number 20
                 g.roll(0);
+
+            Assert.Equal(0, g.score());
         }
     }
 }
