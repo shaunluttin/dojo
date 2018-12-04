@@ -1,6 +1,12 @@
 
 # dojo
 
+Monday 03 December 2018
+
+* Start at The First Test. 
+
+* Next time, start where I left off today.
+
 01 December 2018 
 
 * [ ] Do The Bowling Game Kata in C# with more C# naming conventions. E.g. Roll and Score not roll and score.
