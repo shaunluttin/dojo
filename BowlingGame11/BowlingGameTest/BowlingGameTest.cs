@@ -16,19 +16,21 @@ namespace BowlingGameTest
         [Fact]
         public void testGutterGame()
         {
-            for (var i = 0; i  < 20; i++) // ugly magic number 20
-                _g.roll(0);
-
+            rollMany(20, 0);
             Assert.Equal(0, _g.score());
         }
 
         [Fact]
         public void testAllOnes()
         {
-            for (var i = 0; i  < 20; i++) // ugly magic number 20
-                _g.roll(1);
-
+            rollMany(20, 1);
             Assert.Equal(20, _g.score());
+        }
+
+        private void rollMany(int rolls, int pins)
+        {
+            for (var i = 0; i  < rolls; i++) // ugly magic number 20
+                _g.roll(pins);
         }
     }
 }
