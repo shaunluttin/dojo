@@ -8,6 +8,8 @@ namespace BowlingGameTest
     {
         private Game _g;
 
+        private const int RollsPerGame = 20;
+
         public BowlingGameTest()
         {
             _g = new Game();
@@ -16,20 +18,20 @@ namespace BowlingGameTest
         [Fact]
         public void testGutterGame()
         {
-            rollMany(20, 0);
+            rollMany(RollsPerGame, 0);
             Assert.Equal(0, _g.score());
         }
 
         [Fact]
         public void testAllOnes()
         {
-            rollMany(20, 1);
-            Assert.Equal(20, _g.score());
+            rollMany(RollsPerGame, 1);
+            Assert.Equal(RollsPerGame, _g.score());
         }
 
         private void rollMany(int rolls, int pins)
         {
-            for (var i = 0; i  < rolls; i++) // ugly magic number 20
+            for (var i = 0; i  < rolls; i++) 
                 _g.roll(pins);
         }
     }
