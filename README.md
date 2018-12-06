@@ -1,6 +1,14 @@
 
 # dojo
 
+Thursday 06 December 2018
+
+Installed StyleCop.
+
+* [ ] Learn how to capture `dotnet build` errors to Vim's quickfix list.
+
+* [ ] Configure the StyleCop header rules.
+
 Monday 03 December 2018
 
 * Start at The First Test. 

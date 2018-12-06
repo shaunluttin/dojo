@@ -1,48 +1,50 @@
-using System;
-using Xunit;
-using BowlingGame;
-
 namespace BowlingGameTest
 {
+    using System;
+    using BowlingGame;
+    using Xunit;
+
     public class BowlingGameTest
     {
-        private Game _g;
-
         private const int RollsPerGame = 20;
+
+        private Game g;
 
         public BowlingGameTest()
         {
-            _g = new Game();
+            this.g = new Game();
         }
 
         [Fact]
-        public void testGutterGame()
+        public void TestGutterGame()
         {
-            rollMany(RollsPerGame, 0);
-            Assert.Equal(0, _g.score());
+            this.RollMany(RollsPerGame, 0);
+            Assert.Equal(0, this.g.Score());
         }
 
         [Fact]
-        public void testAllOnes()
+        public void TestAllOnes()
         {
-            rollMany(RollsPerGame, 1);
-            Assert.Equal(RollsPerGame, _g.score());
+            this.RollMany(RollsPerGame, 1);
+            Assert.Equal(RollsPerGame, this.g.Score());
         }
 
 //        [Fact]
-//        public void testOneSpare()
+//        public void TestOneSpare()
 //        {
-//            _g.roll(5);
-//            _g.roll(5);
-//            _g.roll(3);
-//            rollMany(17, 0);
-//            Assert.Equal(16, _g.score());
+//            this.g.Roll(5);
+//            this.g.Roll(5);
+//            this.g.Roll(3);
+//            this.RollMany(17, 0);
+//            Assert.Equal(16, this.g.Score());
 //        }
 
-        private void rollMany(int rolls, int pins)
+        private void RollMany(int rolls, int pins)
         {
-            for (var i = 0; i  < rolls; i++) 
-                _g.roll(pins);
+            for (var i = 0; i < rolls; i++)
+            {
+                this.g.Roll(pins);
+            }
         }
     }
 }

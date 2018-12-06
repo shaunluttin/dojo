@@ -1,22 +1,24 @@
-﻿using System;
-
-namespace BowlingGame
+﻿namespace BowlingGame
 {
+    using System;
+
     public class Game
     {
-        private int[] _rolls = new int[21]; // ugly magic number
-        private int _currentRoll;
+        private int[] rolls = new int[21]; // ugly magic number
+        private int currentRoll;
 
-        public void roll(int pins)
+        public void Roll(int pins)
         {
-            _rolls[_currentRoll++] = pins;
+            this.rolls[this.currentRoll++] = pins;
         }
 
-        public int score()
+        public int Score()
         {
             var score = 0;
-            for(var i = 0; i < _rolls.Length; ++i)
-                score += _rolls[i];
+            for (var i = 0; i < this.rolls.Length; ++i)
+            {
+                score += this.rolls[i];
+            }
 
             return score;
         }
