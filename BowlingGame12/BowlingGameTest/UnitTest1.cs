@@ -6,8 +6,9 @@ namespace BowlingGameTest
     public class UnitTest1
     {
         [Fact]
-        public void testGutterGame() 
+        public void Test1()
         {
+
         }
     }
 }
