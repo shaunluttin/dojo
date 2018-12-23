@@ -8,5 +8,10 @@ namespace BowlingGame
         {
         
         }
+
+        public int Score()
+        {
+            return 0;
+        }
     }
 }
