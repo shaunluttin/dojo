@@ -1,6 +1,12 @@
 
 # dojo
 
+Sunday 23 December 2018
+
+How do we close the No Name buffer in Vim? 
+
+I get into that ^^^ situation after renaming files from Vim with `Ex` (Netrw). 
+
 Thursday 06 December 2018
 
 Installed StyleCop.

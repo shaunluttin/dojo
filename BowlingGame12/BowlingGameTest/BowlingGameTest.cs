@@ -4,7 +4,7 @@ using BowlingGame;
 
 namespace BowlingGameTest
 {
-    public class UnitTest1
+    public class BowlingGameTest
     {
         [Fact]
         public void testGutterGame()
