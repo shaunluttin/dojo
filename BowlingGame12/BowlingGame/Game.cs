@@ -16,9 +16,19 @@ namespace BowlingGame
         public int Score()
         {
             var score = 0;
-            for (var i = 0; i < 20; i++) 
+            const int frames = 10; // two rolls per frame
+            for (int frame = 0, roll = 0; frame < frames; frame += 1, roll += 2) 
             {
-                 score += this._rolls[i];
+                if (this._rolls[roll] + this._rolls[roll + 1] == 10)
+                {
+                    // spare
+                    score += this._rolls[roll] + this._rolls[roll + 1];
+                    score += this._rolls[roll + 2];
+                }
+                else 
+                {
+                    score += this._rolls[roll] + this._rolls[roll + 1];
+                }
             }
 
             return score;
