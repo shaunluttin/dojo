@@ -6,30 +6,33 @@ namespace BowlingGameTest
 {
     public class BowlingGameTest
     {
+        private Game _g;
+
+        public BowlingGameTest()
+        {
+            this._g = new Game();
+        }
+
         [Fact]
         public void testGutterGame()
         {
-            var g = new Game();
-
             for (var i = 0; i < 20; ++i) 
             {
-                g.Roll(0); 
+                this._g.Roll(0); 
             }
 
-            Assert.Equal(0, g.Score());
+            Assert.Equal(0, this._g.Score());
         }
 
         [Fact]
         public void testAllOnes()
         {
-            var g = new Game(); // duped code
-
             for (var i = 0; i < 20; ++i) 
             {
-                g.Roll(1); 
+                this._g.Roll(1); 
             }
 
-            Assert.Equal(20, g.Score());
+            Assert.Equal(20, this._g.Score());
         }
     }
 }
