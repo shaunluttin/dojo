@@ -13,7 +13,7 @@ namespace BowlingGameTest
 
             for (var i = 0; i < 20; ++i) 
             {
-                g.Roll(); 
+                g.Roll(0); 
             }
 
             Assert.Equal(g.Score(), 0);
