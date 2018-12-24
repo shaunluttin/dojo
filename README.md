@@ -81,6 +81,7 @@ Move on to the next section only once the previous one is 'Done and memorized'.
 * The Third Test. Done. 
 * The Fourth Test. Done. 
 * The Fifth Test. Done. 
+* Film the entire kata once with Vim/PowerShell/ConEmu.
 
 Evaluate: 
 
