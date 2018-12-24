@@ -14,7 +14,7 @@ namespace BowlingGameTest
         }
 
         [Fact]
-        public void testGutterGame()
+        public void TestGutterGame()
         {
             RollMany(20, 0);
 
@@ -22,7 +22,7 @@ namespace BowlingGameTest
         }
 
         [Fact]
-        public void testAllOnes()
+        public void TestAllOnes()
         {
             RollMany(20, 1);
 
