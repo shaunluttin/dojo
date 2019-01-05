@@ -14,4 +14,6 @@
     :Ex
     dotnet add BowlingGameTest\BowlingGameTest.csproj reference BowlingGame\BowlingGame.csproj
 
-04 Fail testAllOnes: 
+04 Fail testAllOnes: Expected 20 Actual 0
+
+05 Pass testAllOnes
