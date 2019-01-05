@@ -1,4 +1,10 @@
 
+01 Create the test project; rename files/classes.
+
+    dotnet new xunit --name BowlingGameTest
+    vim */*.cs
+    :Ex
+
 Create a single project with a test class.
 
     dotnet new console -n BowlingGame02
