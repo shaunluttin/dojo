@@ -6,9 +6,18 @@ namespace BowlingGameTest
     public class BowlingGameTest
     {
         [Fact]
-        public void Test1()
+        public void testGutterGame()
         {
+            // arrange
+            var g = new Game();
 
+            // act
+            for (var i = 0; i < 20; ++i) {
+                g.Roll(0);
+            }
+
+            // assert
+            Assert.Equal(0, g.Score());
         }
     }
 }
