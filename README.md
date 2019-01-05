@@ -1,6 +1,14 @@
 
 # dojo
 
+Friday 04 January 2019
+
+Abandoned StyleCop.
+
+Listened to The Four Seasons: https://www.youtube.com/watch?v=t_Kd_G7p6ZQ
+
+An alternative is Glen Gould: https://www.youtube.com/watch?v=Ah392lnFHxM
+
 Sunday 23 December 2018
 
 How do we close the No Name buffer in Vim? 
