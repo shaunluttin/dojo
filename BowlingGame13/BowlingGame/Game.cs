@@ -15,20 +15,29 @@ namespace BowlingGame
             _rolls[_roll++] = pins;
         }
 
+        private int GetFrameScore(int frameIndex) 
+        {
+            return _rolls[frameIndex] + _rolls[frameIndex + 1];
+        }
+
         public int Score() 
         {
+            const int RollsPerFrame = 2;
+            const int MaxFrameScore = 10;
             int score = 0;
 
-            for(var i = 0; i < _rolls.Length; i += 2) // ugly
+            // The frameIndex represents the first roll of each frame
+            for(var frameIndex = 0; 
+                    frameIndex < _rolls.Length; 
+                    frameIndex += RollsPerFrame)
             {
-                var frameScore = _rolls[i] + _rolls[i + 1];
+                var frameScore = GetFrameScore(frameIndex);
 
-                if (frameScore == 10) // ugly
+                if (frameScore == MaxFrameScore) // IsSpare
                 {
-                    // spare
                     // add the spare bonus, which is the value of 
                     // the first roll of the next frame
-                    score += _rolls[i + 2];
+                    score += _rolls[frameIndex + 2];
                 }
 
                 score += frameScore;

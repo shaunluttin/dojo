@@ -34,3 +34,5 @@ vsplit
 09 Use const not magic number (explanatory variable)
 
 10 Pass testSpare
+
+11 Refactor: explanatory variables/methods & comments
