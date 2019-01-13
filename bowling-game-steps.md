@@ -28,3 +28,5 @@ vsplit
 06 Refactor shared test code
 
 07 Fail testSpare: Expected 16 Actual 13
+
+08 Refactor/redesign in preparation for testSpare.
