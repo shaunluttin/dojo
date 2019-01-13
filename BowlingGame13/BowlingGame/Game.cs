@@ -19,9 +19,19 @@ namespace BowlingGame
         {
             int score = 0;
 
-            for(var i = 0; i < _rolls.Length; i++) 
+            for(var i = 0; i < _rolls.Length; i += 2) // ugly
             {
-                score += _rolls[i];    
+                var frameScore = _rolls[i] + _rolls[i + 1];
+
+                if (frameScore == 10) // ugly
+                {
+                    // spare
+                    // add the spare bonus, which is the value of 
+                    // the first roll of the next frame
+                    score += _rolls[i + 2];
+                }
+
+                score += frameScore;
             }
 
             return score;

@@ -32,3 +32,5 @@ vsplit
 08 Refactor/redesign in preparation for testSpare
 
 09 Use const not magic number (explanatory variable)
+
+10 Pass testSpare
