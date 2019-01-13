@@ -4,7 +4,9 @@ namespace BowlingGame
 {
     public class Game
     {
-        private int[] _rolls = new int[20]; // ugly magic number
+        private const int RollsPerGame = 20;
+
+        private int[] _rolls = new int[RollsPerGame];
 
         private int _roll = 0;
 
