@@ -25,38 +25,41 @@ namespace BowlingGame
 
             for(var frame = 0; frame < FramesPerGame; frame++)
             {
-                // spare
                 if (IsSpare(frameIndex)) 
                 {
-                    // the spare bonus is the value of 
-                    // the first roll of the next frame
-                    score += MaxFrameScore + _rolls[frameIndex + 2];
-
+                    score += GetTotalSpareScore(frameIndex);
                     frameIndex += 2;
                     continue;
                 }
 
-                // strike
-                if(IsStrike(frameIndex)) 
+                if (IsStrike(frameIndex)) 
                 {
-                    // the strike bonus is the value of 
-                    // the both rolls of the next frame
-                    score += MaxFrameScore + 
-                        _rolls[frameIndex + 1] + 
-                        _rolls[frameIndex + 2];
-
+                    score += GetTotalStrikeScore(frameIndex);
                     frameIndex += 1;
                     continue;
                 }
 
                 // neither spare nor strike
-                score += _rolls[frameIndex] + _rolls[frameIndex + 1];
+                score += GetTotalFrameScore(frameIndex);
 
                 frameIndex += 2;
             }
 
             return score;
         }
+
+        private int GetTotalFrameScore(int frameIndex) => 
+            _rolls[frameIndex] + _rolls[frameIndex + 1];
+
+        // the spare bonus is the value of 
+        // the first roll of the next frame
+        private int GetTotalSpareScore(int frameIndex) => 
+            MaxFrameScore + _rolls[frameIndex + 2];
+
+        // the strike bonus is the value of 
+        // both rolls of the next frame
+        private int GetTotalStrikeScore(int frameIndex) => 
+            MaxFrameScore + _rolls[frameIndex + 1] + _rolls[frameIndex + 2];
 
         private bool IsStrike(int frameIndex) => 
             _rolls[frameIndex] == MaxFrameScore;

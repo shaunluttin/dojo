@@ -45,4 +45,7 @@ vsplit
 
 15 Factor out IsSpare, IsStrike, FramesPerGame
 
-16 Pass testPerfectGame. Done!
+16 Factor out SpareBonus, StrikeBonus, and FrameSum
+
+17 Pass testPerfectGame. Done!
+

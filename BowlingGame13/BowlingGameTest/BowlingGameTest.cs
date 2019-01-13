@@ -67,6 +67,10 @@ namespace BowlingGameTest
         public void TestPerfectGame()
         {
             // act
+            // 
+            // a player who rolls a strike in the last frame is 
+            // awarded two bonus rolls; ergo, twelve rolls total in a perfect game
+            // 
             RollMany(12, 10); 
 
             // assert
