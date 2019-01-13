@@ -15,7 +15,7 @@ namespace BowlingGameTest
         }
 
         [Fact]
-        public void testGutterGame()
+        public void TestGutterGame()
         {
             // act
             RollMany(20, 0);
@@ -25,7 +25,7 @@ namespace BowlingGameTest
         }
 
         [Fact]
-        public void testAllOnes()
+        public void TestAllOnes()
         {
             // act
             RollMany(20, 1);
@@ -35,7 +35,7 @@ namespace BowlingGameTest
         }
 
         [Fact]
-        public void testOneSpare()
+        public void TestOneSpare()
         {
             // act
             RollSpare();
@@ -49,7 +49,7 @@ namespace BowlingGameTest
         }
 
         [Fact]
-        public void testOneStrike()
+        public void TestOneStrike()
         {
             // act
             RollStrike(); // 10 + 3 + 4 = 17
