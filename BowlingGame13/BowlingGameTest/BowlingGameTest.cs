@@ -57,7 +57,7 @@ namespace BowlingGameTest
             _g.Roll(3); // 20
             _g.Roll(4); // 24
 
-            RollMany(16, 0);
+            RollMany(16, 0); // one fewer b/c of the strike
 
             // assert
             Assert.Equal(24, _g.Score());

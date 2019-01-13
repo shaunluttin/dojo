@@ -42,3 +42,5 @@ vsplit
 13 Refactor/redesign in preparation for testOneStrike
 
 14 Pass testOneStrike
+
+15 Factor out IsSpare, IsStrike, FramesPerGame
