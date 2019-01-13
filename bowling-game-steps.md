@@ -29,7 +29,7 @@ vsplit
 
 07 Fail testOneSpare: Expected 16 Actual 13
 
-08 Refactor/redesign in preparation for testSpare
+08 Refactor/redesign in preparation for testOneSpare
 
 09 Use const not magic number (explanatory variable)
 
@@ -37,4 +37,6 @@ vsplit
 
 11 Refactor Game: explanatory variables/methods & comments
 
-11 Refactor Tests: explanatory method
+12 Refactor Tests: explanatory method
+
+13 Refactor/redesign in preparation for testOneStrike
