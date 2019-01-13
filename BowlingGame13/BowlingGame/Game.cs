@@ -28,14 +28,27 @@ namespace BowlingGame
                 // spare
                 if (_rolls[frameIndex] + _rolls[frameIndex + 1] == MaxFrameScore) 
                 {
-                    // add the spare bonus, which is the value of 
+                    // the spare bonus is the value of 
                     // the first roll of the next frame
                     score += MaxFrameScore + _rolls[frameIndex + 2];
                     frameIndex += 2;
                     continue;
                 }
 
-                // not spare
+                // strike
+                if(_rolls[frameIndex] == MaxFrameScore) 
+                {
+                    // the strike bonus is the value of 
+                    // the both rolls of the next frame
+                    score += MaxFrameScore + 
+                        _rolls[frameIndex + 1] + 
+                        _rolls[frameIndex + 2];
+
+                    frameIndex += 1;
+                    continue;
+                }
+
+                // not spare nor strike
                 score += _rolls[frameIndex] + _rolls[frameIndex + 1];
                 frameIndex += 2;
             }

@@ -40,3 +40,5 @@ vsplit
 12 Refactor Tests: explanatory method
 
 13 Refactor/redesign in preparation for testOneStrike
+
+14 Pass testOneStrike
