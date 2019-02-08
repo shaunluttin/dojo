@@ -41,7 +41,7 @@ In a production app, these would usually be in separate projects.
 
 04 Fail testAllOnes: Expected 20 Actual 0
 
-05 Pass testAllOnes
+05 Pass testAllOnes: add _score field.
 
 06 Refactor shared test code
 
