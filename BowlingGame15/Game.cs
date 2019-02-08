@@ -2,16 +2,26 @@ namespace BowlingGame15
 {
     public class Game 
     {
-        private int _score;
+        const int RollsPerGame = 20;
+
+        private int[] _rolls = new int[RollsPerGame];
+
+        private int _currentRoll = 0;
 
         public void Roll(int pins) 
         {
-            _score += pins;
+            _rolls[_currentRoll++] = pins;
         }
 
         public int Score() 
         {
-            return _score;
+            var score = 0;
+            foreach (var roll in _rolls) 
+            {
+                score += roll;
+            }
+
+            return score;
         }
     }
 }
