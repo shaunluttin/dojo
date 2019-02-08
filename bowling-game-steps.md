@@ -6,10 +6,10 @@
 ## My Personal Steps
 
 1. Open three console windows in ConEmu (these could be Vim tabs).
-  * notes
-  * code editing
-  * test runner
-  * optionally, commits
+  1. notes
+  2. code editing
+  3. test runner
+  4. optionally: commits
 2. Then follow the "standard commits"
 
 ## Vim Tips
@@ -19,11 +19,11 @@ vsplit
 
 ## Standard Commits
 
-01 Create test project; rename class/file.
+01 Create test project; rename dir/file/class; start watcher.
 
     dotnet new xunit --name BowlingGame
-    vim */*.cs
-    dotnet watch --project BowlingGame test
+    vim *.cs
+    dotnet watch test
 
 02 Fail testGutterGame; 'Game' could not be found
 
