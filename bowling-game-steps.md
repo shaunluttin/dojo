@@ -17,21 +17,27 @@
 Ex:
 vsplit
 
+## Directory Structure
+
+    BowlingGameXX
+      GameTest.cs
+      Game.cs
+      BowlingGame.csproj
+
+For the demo, keep the test and implementation in the same project.
+In a production app, these would usually be in separate projects.
+
 ## Standard Commits
 
 01 Create test project; rename dir/file/class; start watcher.
 
-    dotnet new xunit --name BowlingGame
+    dotnet new xunit --name BowlingGameXX
     vim *.cs
     dotnet watch test
 
-02 Fail testGutterGame; 'Game' could not be found
+02 Fail testGutterGame: 'Game' could not be found
 
-03 Pass testGutterGame; add Game.cs with Roll & Score
-
-    dotnet new classlib --name BowlingGame
-    :Ex
-    dotnet add BowlingGameTest\BowlingGameTest.csproj reference BowlingGame\BowlingGame.csproj
+03 Pass testGutterGame: add Game.cs with Roll & Score
 
 04 Fail testAllOnes: Expected 20 Actual 0
 
