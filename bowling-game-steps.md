@@ -1,4 +1,17 @@
 
+## My Toolsets
+
+* ConEmu / Vim / PowerShell / .NET Core
+
+## My Personal Steps
+
+1. Open three console windows in ConEmu (these could be Vim tabs).
+  * notes
+  * code editing
+  * test runner
+  * optionally, commits
+2. Then follow the "standard commits"
+
 ## Vim Tips
 
 Ex:
@@ -8,10 +21,9 @@ vsplit
 
 01 Create test project; rename class/file.
 
-    dotnet new xunit --name BowlingGameTest
+    dotnet new xunit --name BowlingGame
     vim */*.cs
-    :Ex 
-    dotnet watch --project BowlingGameTest test
+    dotnet watch --project BowlingGame test
 
 02 Fail testGutterGame; 'Game' could not be found
 
