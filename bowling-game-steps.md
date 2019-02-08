@@ -35,7 +35,7 @@ In a production app, these would usually be in separate projects.
     vim *.cs
     dotnet watch test
 
-02 Fail testGutterGame: 'Game' could not be found
+02 Fail testGutterGame: 'Game' could not be found, etc
 
 03 Pass testGutterGame: add Game.cs with Roll & Score
 
