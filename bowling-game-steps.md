@@ -51,7 +51,7 @@ In a production app, these would usually be in separate projects.
 
 09 Use const not magic number (explanatory variable)
 
-10 Pass testOneSpare
+10 Pass testOneSpare: track the frameIndex <------------- 30 minutes, Fri 08 Feb 2019
 
 11 Refactor Game: explanatory variables/methods & comments
 
