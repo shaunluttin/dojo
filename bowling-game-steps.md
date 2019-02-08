@@ -27,7 +27,7 @@ vsplit
 
 02 Fail testGutterGame; 'Game' could not be found
 
-03 Add lib project; rename class/file; add reference; 1/1
+03 Pass testGutterGame; add Game.cs with Roll & Score
 
     dotnet new classlib --name BowlingGame
     :Ex
