@@ -6,9 +6,15 @@ namespace BowlingGame15
     public class GameTest
     {
         [Fact]
-        public void Test1()
+        public void testGutterGame()
         {
+            var game = new Game();
 
+            for (var i = 0; i < 20; i++) {
+                game.Roll(0);
+            }
+
+            Assert.Equal(0, game.Score());
         }
     }
 }
