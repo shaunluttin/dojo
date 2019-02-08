@@ -16,9 +16,19 @@ namespace BowlingGame15
         public int Score() 
         {
             var score = 0;
-            foreach (var roll in _rolls) 
+            
+            // the frameIndex is the first roll of the frame: 0,2,4,...,18
+            for (var frameIndex = 0; frameIndex < 20; frameIndex += 2)
             {
-                score += roll;
+                var frameScore = _rolls[frameIndex] + _rolls[frameIndex + 1];
+
+                // spare
+                if (frameScore == 10) 
+                {
+                    frameScore += _rolls[frameIndex + 2];
+                }
+
+                score += frameScore;
             }
 
             return score;
