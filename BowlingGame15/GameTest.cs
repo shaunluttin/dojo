@@ -28,6 +28,21 @@ namespace BowlingGame15
             Assert.Equal(20, _game.Score());
         }
 
+        [Fact]
+        public void TestOneSpare()
+        {
+            // spare
+            _game.Roll(5);
+            _game.Roll(5);
+            // spare bonus will be six
+            _game.Roll(3);
+
+            // additional rolls are all zeros
+            RollMany(17, 0);
+
+            Assert.Equal(16, _game.Score());
+        }
+
         private void RollMany(int rolls, int pins)
         {
             for (var i = 0; i < rolls; i++) {
