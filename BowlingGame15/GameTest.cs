@@ -5,29 +5,34 @@ namespace BowlingGame15
 {
     public class GameTest
     {
-        [Fact]
-        public void testGutterGame()
+        private Game _game;
+
+        public GameTest() 
         {
-            var game = new Game();
-
-            for (var i = 0; i < 20; i++) {
-                game.Roll(0);
-            }
-
-            Assert.Equal(0, game.Score());
+            _game = new Game();
         }
 
         [Fact]
-        // ugly repetition
-        public void testAllOnes()
+        public void TestGutterGame()
         {
-            var game = new Game();
+            RollMany(20, 0);
 
-            for (var i = 0; i < 20; i++) {
-                game.Roll(1);
+            Assert.Equal(0, _game.Score());
+        }
+
+        [Fact]
+        public void TestAllOnes()
+        {
+            RollMany(20, 1);
+
+            Assert.Equal(20, _game.Score());
+        }
+
+        private void RollMany(int rolls, int pins)
+        {
+            for (var i = 0; i < rolls; i++) {
+                _game.Roll(pins);
             }
-
-            Assert.Equal(20, game.Score());
         }
     }
 }
