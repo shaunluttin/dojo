@@ -29,7 +29,7 @@ In a production app, these would usually be in separate projects.
 
 ## Standard Commits
 
-01 Create test project; rename dir/file/class; start watcher.
+01 Create test project; rename file/class; start watcher.
 
     dotnet new xunit --name BowlingGameXX
     vim *.cs
